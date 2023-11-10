@@ -49,8 +49,8 @@ parser.add_argument('--patch_width',
                     help='width of a patch to crop')
 parser.add_argument('--top_crop',
                     type=int,
-                    default=0,
-                    # default=100,
+                    # default=0,
+                    default=200,
                     help='top crop size for KITTI dataset')
 
 
@@ -249,7 +249,7 @@ parser.add_argument('--save_result_only',
                     help='save result images only with submission format')
 
 
-args = parser.parse_args()
+args, unknown = parser.parse_known_args()
 
 args.num_gpus = len(args.gpus.split(','))
 
