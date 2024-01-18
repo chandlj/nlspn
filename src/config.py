@@ -49,8 +49,8 @@ parser.add_argument('--patch_width',
                     help='width of a patch to crop')
 parser.add_argument('--top_crop',
                     type=int,
-                    # default=0,
-                    default=200,
+                    default=0,
+                    # default=200,
                     help='top crop size for KITTI dataset')
 
 
